@@ -167,7 +167,7 @@ function User_wallet() {
       }
 
       const options = {
-        key: "rzp_test_9EhXboGknRQfcu",
+        key: "",
         amount: amount * 100, // Convert to paise
         currency: "INR",
         name: "LocalHand",
