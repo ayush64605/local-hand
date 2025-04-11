@@ -11,7 +11,7 @@ app.use(cors());
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "savaliyaayush2295@gmail.com", // Replace with your email
+    user: "", // Replace with your email
     pass: "", // Replace with your generated app password
   },
 });
@@ -21,7 +21,7 @@ app.post("/send-provider-email", async (req, res) => {
     const { name, email, password } = req.body; // Receive password from frontend
 
     const mailOptions = {
-      from: "savaliyaayush2295@gmail.com",
+      from: "",
       to: email,
       subject: "Your Account Password",
       text: `Hello ${name},\n\nYour account has been created successfully. Here is your password: ${password}\n\nThank you for joining us!`,
